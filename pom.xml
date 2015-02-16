@@ -60,6 +60,18 @@
 
     </properties>
 
+    <scm>
+        <url>https://github.com/savoirtech/savoir-parent</url>
+        <connection>scm:git:git@github.com:savoirtech/savoir-parent.git</connection>
+        <developerConnection>scm:git:git@github.com:savoirtech/savoir-parent.git</developerConnection>
+        <tag>savoir-parent-parent-1.0.25</tag>
+    </scm>
+
+    <organization>
+        <name>Savoir Technologies, Inc.</name>
+        <url>http://www.savoirtech.com</url>
+    </organization>
+
     <licenses>
         <license>
             <name>Apache 2</name>
