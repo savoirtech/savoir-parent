@@ -63,7 +63,6 @@
         <url>https://github.com/savoirtech/savoir-parent</url>
         <connection>scm:git:git@github.com:savoirtech/savoir-parent.git</connection>
         <developerConnection>scm:git:git@github.com:savoirtech/savoir-parent.git</developerConnection>
-        <tag>savoir-parent-1.0.0</tag>
     </scm>
 
     <organization>
