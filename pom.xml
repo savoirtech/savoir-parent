@@ -64,8 +64,7 @@
         <!--
         Sonar/JaCoCo Integration Test Coverage Fix
         -->
-        <!--<sonar.jacoco.itReportPath>${project.basedir}/reports/jacoco.exec</sonar.jacoco.itReportPath>-->
-        <!--<sonar.jacoco.itReportPath>${session.executionRootDirectory}/target/jacoco-it.exec</sonar.jacoco.itReportPath>-->
+        <sonar.jacoco.itReportPath>${session.executionRootDirectory}/target/jacoco-it.exec</sonar.jacoco.itReportPath>
         <sonar.language>java</sonar.language>
 
     </properties>
@@ -151,6 +150,9 @@
                             <goals>
                                 <goal>prepare-agent-integration</goal>
                             </goals>
+                            <configuration>
+                                <destFile>${session.executionRootDirectory}/target/jacoco-it.exec</destFile>
+                            </configuration>
                         </execution>
                         <execution>
                             <id>default-report</id>
@@ -163,6 +165,9 @@
                             <goals>
                                 <goal>report-integration</goal>
                             </goals>
+                            <configuration>
+                                <dataFile>${session.executionRootDirectory}/target/jacoco-it.exec</dataFile>
+                            </configuration>
                         </execution>
                     </executions>
                 </plugin>
