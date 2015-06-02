@@ -163,9 +163,6 @@
                             <goals>
                                 <goal>report-integration</goal>
                             </goals>
-                            <configuration>
-                                <dataFile>${session.executionRootDirectory}/target/jacoco-it.exec</dataFile>
-                            </configuration>
                         </execution>
                     </executions>
                 </plugin>
